@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    background-color: #0e5d54 !important;
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    flex-direction: column;
+    color: white;
+}
+
+.title {
+    margin: 20px;
+}
+
+#score {
+    color: #70b8f3;
+    position: fixed;
+    left: 4em;
+    top: 11.8em;
+}
+
+
+#startButton {
+    position: fixed;
+    top: 30em;
+}
+
+#text {
+    color: #70b8f3;
+    position: fixed;
+    left: 1em;
+    top: 14.5em;
+}
+
+#message {
+    position: fixed;
+    color: firebrick;
+    font-weight: bold;
+    font-size: 40px;
+    right: 19em;
+    top: 110px;
+    height: 100px;
+    width: 100px;
+}
+
+#setDifficult {
+    position: fixed;
+    left: 1em;
+    top: 200px;
+    height: 100px;
+    width: 100px;
+}
+
+.subtext {
+    position: fixed;
+    left: 7px;
+    color: #3a3838;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#grid TR TD{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: large;
+    background: #f5f7f8;
+    width: 25px;
+    height: 25px;
+}
+
+#grid TR TD.obstacle {
+    background-color: #573536 !important;
+}
