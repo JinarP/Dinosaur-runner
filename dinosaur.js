@@ -71,7 +71,6 @@ function moveObstacle () {
 }
 
 function createObstacle () {
-    console.log(speed);
     speed = Math.floor(Math.random() * (1400 - 10) + 10);
     obstacle.push({obstacleLine: height - 2, obstacleColumn: length - 1});
 }
