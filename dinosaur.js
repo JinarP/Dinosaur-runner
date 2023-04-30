@@ -1,5 +1,5 @@
 let score = 0;
-const height = 18;
+const height = 15;
 const length = 80;
 let speed = 1200;
 let dinosaur = [{i: height - 2, j: 30}];
@@ -71,10 +71,9 @@ function moveObstacle () {
 }
 
 function createObstacle () {
-    const randomColumn = Math.floor(Math.random() * (80 - 50) + 50);
-    if (!grid.rows[height - 2].cells[randomColumn - 1].classList.contains("obstacle")||grid.rows[height - 2].cells[randomColumn - 2].classList.contains("obstacle")) {
-        obstacle.push({obstacleLine: height - 2, obstacleColumn: randomColumn});
-    }
+    console.log(speed);
+    speed = Math.floor(Math.random() * (1400 - 10) + 10);
+    obstacle.push({obstacleLine: height - 2, obstacleColumn: length - 1});
 }
 function checkGameOver() {
     if (grid.rows[dinoLine].cells[dinoColumn].innerHTML === "⛰️") {
